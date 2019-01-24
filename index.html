@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Calculator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container background">
+    <div class="jumbotron">
+        <h2>Currency Calculator</h2>
+        <p>Convert the currency</p>
+        <form class ="form-inline">
+            <div class="form-group">
+                <input type="number" id="amount" min = '1'>
+                <label>PLN convert to:</label>
+                <select class="form-control" id="currency">
+                    <option>Wybierz...</option>
+                    <option value="eur">EUR</option>
+                    <option value="usd">USD</option>
+                    <option value="gbp">GBP</option>
+                    <option value="chf">CHF</option>
+                    <option value="hrk">HRK</option>
+                    <option value="jpy">JPY</option>
+                </select>
+            </div>
+        </form>
+         <div class="form-group">
+             <p class = "showResult">
+                 <button class="btn btn-primary" id="btnCalculate">Calculate</button>
+                 Result is
+                     <span class = "btn-success" id="result"></span>
+             </p>
+             <div class="result">
+             </div>
+         </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
+
+</body>
+
+</html>
