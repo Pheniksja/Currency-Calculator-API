@@ -38,7 +38,7 @@ $(function() {
                 alert ('UWAGA: Wprowadzany znak musi być liczbą')
             }
             else {
-               var result = Math.round(amountValue / midEuro) 
+               var result = Math.round(amountValue / midEuro * 100) / 100 
             }
         finalResult.textContent = result;
             amountInput.value = '';
