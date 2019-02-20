@@ -24,7 +24,7 @@ $(function() {
 
 //Tworze nowy element i wypelniam go danymi dotyczącymi kursu
             var newEl = $(`
-                <div class = "descript">
+                <div>
                     <p>  Średni kurs NBP z dnia  ${effectiveDate} wynosi: </p>
                     <p>  1 PLN = ${midEuro}  </p>
                 </div>
@@ -43,6 +43,6 @@ $(function() {
         finalResult.textContent = result;
             amountInput.value = '';
     })
-    document.querySelector(".descript").innerHTML = '';
+
 });
 });
