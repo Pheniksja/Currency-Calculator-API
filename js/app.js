@@ -12,7 +12,7 @@ $(function() {
     const selectValue = currencySelect.value
 
     //wysylam zapytanie o aktualny kurs
-    $.ajax(`http://api.nbp.pl/api/exchangerates/rates/a/${selectValue}/`)
+    $.ajax(`https://api.nbp.pl/api/exchangerates/rates/a/${selectValue}/`)
         .done(function(data) {
 
             //tworzę zmienne dot. aktualnego kurs i daty
