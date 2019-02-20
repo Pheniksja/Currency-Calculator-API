@@ -43,5 +43,6 @@ $(function() {
         finalResult.textContent = result;
             amountInput.value = '';
     })
+    document.querySelector ('.descr').innerHTML = '';
 });
 });
